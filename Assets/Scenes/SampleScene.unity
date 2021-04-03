@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 302551654}
   - component: {fileID: 302551656}
   - component: {fileID: 302551655}
+  - component: {fileID: 302551657}
   m_Layer: 5
   m_Name: IQDisplay
   m_TagString: Untagged
@@ -360,6 +361,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302551653}
   m_CullTransparentMesh: 0
+--- !u!114 &302551657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302551653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4739d91e6ba453428a7b7b144c9b185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 5
+  pointsText: {fileID: 302551655}
 --- !u!1 &317753018
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +386,7 @@ GameObject:
   - component: {fileID: 317753019}
   - component: {fileID: 317753021}
   - component: {fileID: 317753020}
+  - component: {fileID: 317753022}
   m_Layer: 5
   m_Name: PowerDisplay
   m_TagString: Untagged
@@ -438,6 +454,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317753018}
   m_CullTransparentMesh: 0
+--- !u!114 &317753022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317753018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc9d79cd76a7fe4eacaf7a14c2d6ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 5
+  pointsText: {fileID: 317753020}
 --- !u!1 &513200518
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +935,50 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 850034437}
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 302551657}
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 317753022}
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1700295255}
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1185787058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,6 +1122,7 @@ GameObject:
   - component: {fileID: 1700295252}
   - component: {fileID: 1700295254}
   - component: {fileID: 1700295253}
+  - component: {fileID: 1700295255}
   m_Layer: 5
   m_Name: CHARMDISPLAY
   m_TagString: Untagged
@@ -1115,6 +1190,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700295251}
   m_CullTransparentMesh: 0
+--- !u!114 &1700295255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700295251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483a89e679f51904985c27dac5cc8f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 5
+  pointsText: {fileID: 1700295253}
 --- !u!1 &1703388681
 GameObject:
   m_ObjectHideFlags: 0
