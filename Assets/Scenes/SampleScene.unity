@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 9296077}
   - component: {fileID: 9296079}
   - component: {fileID: 9296078}
+  - component: {fileID: 9296080}
   m_Layer: 5
   m_Name: HP
   m_TagString: Untagged
@@ -155,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 1126, y: 400}
+  m_AnchoredPosition: {x: 1133, y: 382}
   m_SizeDelta: {x: 581.677, y: 114.035645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9296078
@@ -201,6 +202,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9296076}
   m_CullTransparentMesh: 0
+--- !u!114 &9296080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9296076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790301be22d477449a065ae34fe6a0c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 100
+  pointsText: {fileID: 9296078}
+  addPoints: 0
 --- !u!1 &55746615
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9556f479a5e345f4dae07ccc8003a044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 0
   pointsText: {fileID: 225562081}
 --- !u!114 &225562081
 MonoBehaviour:
@@ -757,7 +773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4739d91e6ba453428a7b7b144c9b185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 0
   pointsText: {fileID: 302551655}
 --- !u!1 &317753018
 GameObject:
@@ -850,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc9d79cd76a7fe4eacaf7a14c2d6ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 0
   pointsText: {fileID: 317753020}
 --- !u!1 &513200518
 GameObject:
@@ -1253,7 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eccbd856d5a7a14ba069e22d8c535e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 0
   pointsText: {fileID: 850034438}
 --- !u!114 &850034438
 MonoBehaviour:
@@ -1334,7 +1350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -426}
+  m_AnchoredPosition: {x: 0, y: -442}
   m_SizeDelta: {x: 542.6843, y: 101.75331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185787057
@@ -1436,6 +1452,28 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1700295255}
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9296080}
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1922770743}
         m_MethodName: Generate
         m_Mode: 1
         m_Arguments:
@@ -1578,7 +1616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3169014503443e42b74748fdefe6254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 5
+  strength: 0
   strengthText: {fileID: 1663722939}
 --- !u!114 &1663722939
 MonoBehaviour:
@@ -1792,7 +1830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483a89e679f51904985c27dac5cc8f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 0
   pointsText: {fileID: 1700295253}
 --- !u!1 &1703388681
 GameObject:
@@ -2118,6 +2156,7 @@ GameObject:
   - component: {fileID: 1922770740}
   - component: {fileID: 1922770742}
   - component: {fileID: 1922770741}
+  - component: {fileID: 1922770743}
   m_Layer: 5
   m_Name: SP
   m_TagString: Untagged
@@ -2141,7 +2180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 1126, y: 309}
+  m_AnchoredPosition: {x: 1133, y: 291}
   m_SizeDelta: {x: 581.677, y: 114.035645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922770741
@@ -2185,3 +2224,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922770739}
   m_CullTransparentMesh: 0
+--- !u!114 &1922770743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922770739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2516f2c2b724c83469a4ad8ffe0dca7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 100
+  pointsText: {fileID: 1922770741}
+  addPoints: 0

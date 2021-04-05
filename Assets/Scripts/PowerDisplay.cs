@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PowerDisplay : MonoBehaviour
 {
-    public int points = 5;
+    public int points = 0;
     public Text pointsText;
 
     // Update is called once per frame
